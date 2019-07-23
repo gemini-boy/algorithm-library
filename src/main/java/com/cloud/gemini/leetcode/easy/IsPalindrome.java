@@ -37,7 +37,7 @@ public class IsPalindrome {
         int revertNum = 0;
 
         while ( x > revertNum) {
-            revertNum = revertNum / 10 + x % 10;
+            revertNum = revertNum * 10 + x % 10;
 
             x /= 10;
         }
@@ -46,6 +46,6 @@ public class IsPalindrome {
     }
 
     public static void main(String[] args) {
-        System.out.println(isPalindrome(10001));
+        System.out.println(isPalindrome(121));
     }
 }
