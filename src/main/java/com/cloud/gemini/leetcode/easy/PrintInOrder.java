@@ -77,17 +77,11 @@ public class PrintInOrder {
 
     public static void main(String[] args) throws InterruptedException {
         PrintInOrder printInOrder = new PrintInOrder();
-        printInOrder.first(() -> {
-            System.out.println("one");
-        });
+        printInOrder.first(() -> System.out.println("one"));
 
-        printInOrder.second(() -> {
-            System.out.println("two");
-        });
+        printInOrder.second(() -> System.out.println("two"));
 
-        printInOrder.third(() -> {
-            System.out.println("three");
-        });
+        printInOrder.third(() -> System.out.println("three"));
 
     }
 }
